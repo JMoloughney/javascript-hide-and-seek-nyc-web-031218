@@ -4,10 +4,10 @@ function getFirstSelector(s) {
 
 function nestedTarget() {
   return document.querySelector('#nested .target')
-  }
+}
 
 function deepestChild(){
-  let node = document.getElementById('grand-node')
+let node = document.getElementById('grand-node')
 let next = node.children[0]
 while (next){
   node = next
@@ -15,6 +15,7 @@ while (next){
 }
 return node
 }
+
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
   for (let i = 0, l = rankedLists.length; i < l; i++){
